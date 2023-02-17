@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAV BAR */
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 15px #333;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20em;
+}
+
+nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li
+{
+list-style: none;
+padding: 0 2rem;
+position: relative;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 3ch;
+    color: #1a1a1a;
+    transition: 500ms ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active
+{
+    color: burlywood;
+}
+
+nav ul li a.active::after
+{
+content: " ";
+position: absolute;
+width: 30%;
+height: 1px;
+background-color: burlywood;
+}
+
+/* END OF NAV BAR CODE */
+
+h1
+{
+    line-height: 0.316;
+    color: #222;
+}
